@@ -1,6 +1,6 @@
 public class Pedido {
-    public Cliente cliente;
-    public Pedido(Cliente cliente) {
+    Cliente cliente;
+    Pedido(Cliente cliente) {
         this.cliente = cliente;
     }
 
