@@ -1,10 +1,10 @@
 public class Cliente {
-    public boolean esVip;
-    public String nombre;
-    public int id;
+    private boolean esVip;
+    private String nombre;
+    private int id;
 
-    public Cliente(boolean vip, String nombre, int id) {
-        this.esVip = vip;
+    public Cliente(boolean esVip, String nombre, int id) {
+        this.esVip = esVip;
         this.nombre = nombre;
         this.id = id;
     }
@@ -18,10 +18,10 @@ public class Cliente {
     }
 
     public int getId() {
-        return this.id;
+        return id;
     }
 
-    public void setId(String email) {
+    public void setId(int id) {  // Fix: Correct parameter type
         this.id = id;
     }
 
@@ -29,7 +29,7 @@ public class Cliente {
         return esVip;
     }
 
-    public void setVip(boolean vip) {
-        this.esVip = vip;
+    public void setVip(boolean esVip) {
+        this.esVip = esVip;
     }
 }
